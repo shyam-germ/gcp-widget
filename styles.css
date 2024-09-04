@@ -1,0 +1,86 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    width: 700px; /* Increased width */
+    padding: 30px; /* Slightly increased padding */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.logo img {
+    width: 70px; /* Increased size */
+    height: 70px;
+    margin-bottom: 25px;
+}
+
+.greeting {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.example-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap for spacing */
+    width: 100%;
+}
+
+.example-questions p {
+    background-color: #f1f1f1;
+    padding: 12px; /* Slightly increased padding */
+    border-radius: 5px;
+    font-size: 15px; /* Slightly increased font size */
+    color: #555;
+}
+
+#searchWidgetTrigger {
+    margin-top: 25px;
+    padding: 18px; /* Slightly increased padding */
+    font-size: 16px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .greeting {
+        font-size: 16px;
+    }
+
+    .example-questions p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #searchWidgetTrigger {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
